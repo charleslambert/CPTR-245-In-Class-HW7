@@ -1,3 +1,32 @@
+/*
+What does the graph model for this function look like?
+                  +-------+
+                 T|       |
+    +-------------+       |
+    |             |       |
+    |             +-------+
+    |                 |F
+    |                 |
++---v---+         +---v---+
+| Return|         |       |T
+| False |         |       +----+
+|       |         |       |    |
++---^---+         +-------+    |
+    |                 |F       |
+    |                 |        |
+    |             +---v---+    |
+    |            T|       |    |
+    +-------------+       |    |
+                  |       |    |
+                  +-------+    |
+                      |F       |
+                      |        |
+                  +---v---+    |
+                  | Return|    |
+                  | True  <----+
+                  |       |
+                  +-------+
+ */
 import org.junit.Test;
 
 import static org.junit.Assert.*;
