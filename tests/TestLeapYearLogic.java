@@ -19,11 +19,23 @@ import static org.junit.Assert.*;
 public class TestLeapYearLogic {
 
     @Test
-    public void testIsLeap() {
+    public void testIsLeap1() {
         assertTrue(LeapYear.isLeap(2004));
-        assertTrue(LeapYear.isLeap(2000));
-        assertFalse(LeapYear.isLeap(2300));
-        assertFalse(LeapYear.isLeap(2049));
     }
 
+
+    @Test
+    public void testIsLeap2() {
+        assertTrue(LeapYear.isLeap(2000));
+    }
+
+    @Test
+    public void testIsLeap3() {
+        assertFalse(LeapYear.isLeap(2300));
+    }
+
+    @Test
+    public void testIsLeap4() {
+        assertFalse(LeapYear.isLeap(2049));
+    }
 }
